@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Prediction</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand mb-0 h1">Prediction</a>
+    <a class="nav-link" href="/">Back to Welcome Page</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/infographic" target="_blank" rel="noopener noreferrer">Infographic</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://github.com/AdrianaCieslak" target="_blank" rel="noopener noreferrer">Adriana Cieslak</a>
+            <a class="dropdown-item" href="https://github.com/Anumala89" target="_blank" rel="noopener noreferrer">Anumala Thapa</a>
+            <a class="dropdown-item" href="https://github.com/jdkwak1994" target="_blank" rel="noopener noreferrer">Jeongdae (JD) Kwak</a>
+            <a class="dropdown-item" href="https://github.com/samuelokunola326" target="_blank" rel="noopener noreferrer">Samuel Okunola</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/about" target="_blank" rel="noopener noreferrer">About the Project</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 style="text-align: center">Enter your inputs below!</h2>
+        <br>
+      </div>
+    </div>
+    <form method="POST">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <fieldset class="form-group">
+            <legend>Borough</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="boroughradio" id="Radios" value="0" checked>
+              <label class="form-check-label" for="gridRadios1">Bronx</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="boroughradio" id="Radios" value="1">
+              <label class="form-check-label" for="gridRadios2">Brooklyn</label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="boroughradio" id="Radios" value="2">
+              <label class="form-check-label" for="gridRadios3">Manhattan</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="boroughradio" id="Radios" value="3">
+              <label class="form-check-label" for="gridRadios2">Queens</label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="boroughradio" id="Radios" value="4">
+              <label class="form-check-label" for="gridRadios3">Staten Island</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="col-lg-6 col-sm-6">
+          <fieldset class="form-group">
+            <legend>Room Type</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="roomtyperadio" id="Radios" value="0" checked>
+              <label class="form-check-label" for="exampleRadios1">Entire Home/Apartment</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="roomtyperadio" id="Radios" value="1">
+              <label class="form-check-label" for="exampleRadios2">Private Room</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="roomtyperadio" id="Radios" value="2">
+              <label class="form-check-label" for="exampleRadios3">Shared Room</label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="form-group">
+            <legend>Reviews per Month (0 to 5)</legend>
+            <input type="range" class="form-control-range" name="reviewmonth" min="0" max="5" step="0.01" id="formControlRange">
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="form-group">
+            <legend>Availability in a Year (0 to 365)</legend>
+            <input type="range" class="form-control-range" name="availability" min="0" max="365" step="1" id="formControlRange">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <button type="submit" class="btn btn-primary">Predict!</button>
+      </div>
+    </form>
+  </div>
+  <br>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h2>Prediction Price</h2>
+      <br>
+      <h5>Price Range: ${{MinPrice}} to ${{MaxPrice}}</h5>
+      <h5>Average Price: ${{Average}}</h5>
+      <br><br>
+      <h3>Based on your input of...</h3>
+      <h6>Borough: {{Borough}}</h6>
+      <h6>Room Type: {{RoomType}}</h6>
+      <h6>Reviews per Month: {{ReviewPerMonth}}</h6>
+      <h6>Availability: {{Availability}} day(s)</h6>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
