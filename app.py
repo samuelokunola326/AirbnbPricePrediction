@@ -1,3 +1,4 @@
+# Importing dependecies
 from flask import Flask, render_template, redirect, request, jsonify
 from flask_pymongo import PyMongo
 import xgboost as xgb
@@ -9,22 +10,22 @@ import seaborn as sns
 import joblib
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, LabelEncoder
 
-
+# loading models 
 linear_model = joblib.load("models/LR.h5")
 xgb_model = joblib.load("models/xgbmodel.h5")
 rf_model = joblib.load("models/rf.h5")
 
-
+# creating flask app 
 app = Flask(__name__)
 app.static_folder = "templates/static"
 
 
-
+# creating home route
 @app.route("/")
 def index():
     return render_template("index.html")
 
-
+# Prediction calc 
 @app.route("/predict", methods=["GET", "POST"])
 def predict():
     if request.method == "POST":
@@ -80,12 +81,12 @@ def predict():
     else:
         return render_template("predict.html")
 
-
+# dashboard view 
 @app.route("/infographic")
 def infographic():
     return render_template("infographic.html")
 
-
+# info page 
 @app.route("/about")
 def about():
     return render_template("about.html")
