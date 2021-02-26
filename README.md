@@ -10,7 +10,8 @@ This app uses machine learning models to predict NYC Airbnb prices and understan
 The app uses html flask templates on the back end to render data via web browser and enable functionality and then deploy to Heroku for public access.
 
  ###### Preprocessing/Data Cleaning
-Our group will work in Jupyter Notebook to complete any preprocessing and data cleaning that is needed before training and testing each model.
+The team used Jupyter Notebook to complete all preprocessing and data cleaning that was needed before spliting, training and testing each model.
+<!-- describe dataset  -->
 
 Model Testing/Selection
 Our group will train and test 3 different model types to predict the price of Airbnb listings in the New York area. We will compare the accuracy of the model against each other and use the model that produces the highest accuracy score as our final/primary model.
