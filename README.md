@@ -1,10 +1,10 @@
 # AirbnbPricePrediction
 
-The Problem
-Using machine learning models to predict NYC Airbnb price and understanding some of the key driving factors behind the pricing of any given listing.
+## Overview 
+This app uses machine learning models to predict NYC Airbnb prices and understand some of the key driving factors behind the pricing of any given listing.
 
 Data Storage
-Our team will use MongoDB to store the results from the testing of our models and to connect the data on the backend of our web application.
+MongoDB to store the results from the testing of our models and to connect the data on the backend of our web application.
 
 Hosting Application
 Our team will be utilizing flask app and html to host data and will deploy to Heroku.
