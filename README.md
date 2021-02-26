@@ -3,13 +3,13 @@
 ## Overview 
 This app uses machine learning models to predict NYC Airbnb prices and understand some of the key driving factors behind the pricing of any given listing.
 
-Data Storage
-MongoDB to store the results from the testing of our models and to connect the data on the backend of our web application.
+ ###### Data Storage
+<!-- MongoDB was used to store the results from the testing of our models and to connect the data on the backend of our web application. -->
 
-Hosting Application
-Our team will be utilizing flask app and html to host data and will deploy to Heroku.
+ ###### Hosting Application
+The app uses html flask templates on the back end to render data via web browser and enable functionality and then deploy to Heroku for public access.
 
-Preprocessing/Data Cleaning
+ ###### Preprocessing/Data Cleaning
 Our group will work in Jupyter Notebook to complete any preprocessing and data cleaning that is needed before training and testing each model.
 
 Model Testing/Selection
