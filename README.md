@@ -1,10 +1,16 @@
 # AirbnbPricePrediction
 
 ## Overview 
-This app uses machine learning models to predict NYC Airbnb prices and understand some of the key driving factors behind the pricing of any given listing.
+This project is a python-based machine learning web application that was hosted using flask as the back end. The application is powered by 3 different machine learning models that are used to analyze an Airbnb dataset. The predictions from the model are then pooled together to create an estimated price range based on the input of the user.
 
- ###### Data Storage
-<!-- MongoDB was used to store the results from the testing of our models and to connect the data on the backend of our web application. -->
+<!-- You can access the application through the link: Need Link -->
+
+ ###### Data Sources
+
+Markup : 
+* https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data?select=AB_NYC_2019.csv
+* https://www.kaggle.com/kritikseth/us-airbnb-open-data#__sid=js0
+* http://insideairbnb.com/get-the-data.html
 
  ###### Hosting Application
 The app uses html flask templates on the back end to render data via web browser and enable functionality and then deploy to Heroku for public access.
