@@ -7,7 +7,6 @@ This project is a python-based machine learning web application that was hosted 
 
  ###### Data Sources
 
-Markup : 
 * https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data?select=AB_NYC_2019.csv
 * https://www.kaggle.com/kritikseth/us-airbnb-open-data#__sid=js0
 * http://insideairbnb.com/get-the-data.html
