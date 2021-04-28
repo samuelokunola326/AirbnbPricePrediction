@@ -1,7 +1,7 @@
 # AirbnbPricePrediction
 
 ## Overview 
-This project is a python-based machine learning web application that was hosted using flask as the back end then deployed to heroku for genral access. The application is powered by 3 different machine learning models that are used to analyze an Airbnb dataset. The predictions from the model are then pooled together to create an estimated price range based on the input of the user.
+This project is a python-based machine learning web application that was hosted using flask as the back end then deployed to Heroku for general access. The application is powered by 3 different machine learning models that are used to analyze an Airbnb dataset. The predictions from the model are then pooled together to create an estimated price range based on the input of the user.s
 
 <!-- You can access the application through the link: Need Link -->
 
