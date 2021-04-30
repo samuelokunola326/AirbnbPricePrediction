@@ -19,7 +19,8 @@ The team used Jupyter Notebook to complete all preprocessing and data cleaning t
 
 * Remove outliers in the upper bound of dataset.
 * Clean data by removing N/A's and adding 0 to blank numerical fileds where needed. 
-* 
+* Translate categorical data to representative numerical fields in prep for creating test and training data.
+* Check feature importance for hypertuning 
 <!-- describe dataset  -->
 
 ###### Model Testing/Selection
