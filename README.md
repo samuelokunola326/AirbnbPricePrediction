@@ -16,6 +16,10 @@ The app uses html flask templates on the back end to render data via web browser
 
  ###### Preprocessing/Data Cleaning
 The team used Jupyter Notebook to complete all preprocessing and data cleaning that was needed before spliting, training and testing each model.
+
+* Remove outliers in the upper bound of dataset.
+* Clean data by removing N/A's and adding 0 to blank numerical fileds where needed. 
+* 
 <!-- describe dataset  -->
 
 ###### Model Testing/Selection
